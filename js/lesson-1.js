@@ -155,32 +155,69 @@
 // Напишіть функцію min(a, b), яка приймає 2 числа і повертає меньше з них.
 // Потрібно додати перевірку, що функція отримує саме числа, в іншому випадку
 // повертати з функції рядок - 'Not a number!'.
-function min(a, b) {
-  // typeof(Number(a))!==Number(a)&&typeof(Number(b))!==Number(b) 
-  if (typeof a!=="number"||typeof b !=="number"){
-    return "Not a number!";
-  }
-    if (b<a) {
-      return b;
-    }
-    else {
-      return a;
-    }
-    }
-console.log(min(5, 6));
+// function min(a, b) {
+//   // typeof(Number(a))!==Number(a)&&typeof(Number(b))!==Number(b)
+//   if (typeof a!=="number"||typeof b !=="number"){
+//     return "Not a number!";
+//   }
+//     if (b<a) {
+//       return b;
+//     }
+//     else {
+//       return a;
+//     }
+//     }
+// console.log(min(5, 6));
 
-
+// function min(a, b) {
+//  const res1= Boolean(Number(a));
+//  const res2=Boolean(Number(b));
+//   if (res1==false||res2==false){
+//     return "Not a number!";
+//   }
+//     if (b<a) {
+//       return b;
+//     }
+//     else {
+//       return a;
+//     }
+//     }
+// console.log(min("5kj", "6"));
+// console.log(min("5", "6"));
+// console.log(min(4, 2));
 // Завдання 9:
 // Напишіть функцію isAdult(age), яка  приймає число - вік користувача і повертає true,
 // якщо параметр age більше чи дорівнює 18.
 // В іншому випадку вона запитує підтвердження через confirm
 // і повертає його результат (true/false).
 
+function isAdult(age) {
+  if (age>=18) {
+    return true;
+  }
+  return confirm("Вам є 18 років?");  
+}
+console.log(isAdult(24));
+
 // Завдання 10:
 // Напишіть функцію fizzBuzz(num), яка приймає число і перевіряє кожне число від 1 до num:
 // Якщо число ділитися  без остачі на 3 - виводить в консоль 'fizz',
 // якщо ділиться  без остачі на 5 - виводить в консоль 'buzz',
 // якщо ділиться  без остачі і на 3, і на 5 - виводить в консоль 'fizzbuzz'.
-function name(params) {
-  
-}
+// function fizzBuzz(num) {
+//   for (let index = 1; index <= num; index++) {
+//      if (index % 3===0 && index % 5 === 0) {
+//       console.log("fizzbuzz");
+//       console.log(index);
+//     }
+//     else if (index%3===0) {
+//       console.log("fizz");
+//       console.log(index);
+//     }
+//     else if (index % 5 === 0) {
+//       console.log("buzz");
+//       console.log(index);
+//     }
+//     }
+// }
+// fizzBuzz(15);
